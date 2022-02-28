@@ -1,0 +1,27 @@
+#divChart{
+    display: block;
+    width:400px ;
+    height: 400px;
+}
+
+table {
+    width: 100%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+.colonne_title{
+    text-align: center;
+}
+.button{
+    background-color: grey;
+    color: white;
+}
+
+.headtitle{
+    background-color: wheat;
+}
+
+.classement{
+    background-color: beige;
+}

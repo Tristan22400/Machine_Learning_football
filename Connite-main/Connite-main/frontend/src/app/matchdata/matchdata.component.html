@@ -1,0 +1,35 @@
+<mat-card class="name_match">
+    <h2>{{homeTeam}} vs {{awayTeam}}</h2>
+</mat-card>
+<div class="div_homeTeam">
+    <mat-card class="card_team">
+        <mat-card class="card_name_team">
+            <h3 class="name_team">{{homeTeam}}</h3>
+        </mat-card>
+        <ul class="un">
+            <li class="list_team"><a class="odds">Objective of this team: </a><a class="odds_value"> Reach top {{objective_homeTeam}}.</a></li>
+            <li class="list_team"><a class="odds">Odds of winning: </a><a class="odds_value">{{odds_homeTeam}} %.</a></li>
+            <li class="list_team"><a class="odds">Importance of this match: </a><a class="odds_value">{{importance_homeTeam}} %.</a></li>
+            <li class="list_team"><a class="odds">Commentaire: </a><a class="odds_value">{{commentaire_homeTeam}}.</a></li>
+
+        </ul>
+        
+    </mat-card>
+</div>
+<div class="div_awayTeam">
+    <mat-card class="card_team">
+        <mat-card class="card_name_team">
+            <h3 class="name_team">{{awayTeam}}</h3>
+        </mat-card>
+
+        <ul class="un">
+            <li class="list_team"><a class="odds">Objective of this team: </a><a class="odds_value">Reach top {{objective_awayTeam}}.</a></li>
+            <li class="list_team"><a class="odds">Odds of winning: </a><a class="odds_value">{{odds_awayTeam}} %.</a></li>
+            <li class="list_team"><a class="odds">Importance of this match: </a><a class="odds_value">{{importance_awayTeam}} %.</a></li>
+            <li class="list_team"><a class="odds">Commentaire: </a><a class="odds_value">{{commentaire_awayTeam}}.</a></li>
+
+        </ul>
+            
+            
+    </mat-card>
+</div>

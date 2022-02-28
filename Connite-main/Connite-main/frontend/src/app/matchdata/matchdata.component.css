@@ -1,0 +1,45 @@
+.div_homeTeam{
+    width: 49%;
+    float: left ;
+    margin-top: 5vh;
+
+}
+
+.div_awayTeam{
+    width: 49%;
+    float : right;
+    margin-top: 5vh;
+
+}
+
+.card_team{
+    height: 60vh;
+    background-color: beige;
+}
+
+.card_name_team{
+    background-color: wheat;
+}
+
+.name_match{
+    background-color: wheat;
+    text-decoration: underline;
+}
+
+.name_team{
+    font-weight: bold;
+}
+
+.odds{
+    font-weight: bold;
+    text-decoration: underline;
+    float: left;
+}
+
+.odds_value{
+    float: left; 
+    margin-left: 10px;}
+
+.list_team{
+    margin-top: 5vh;
+}

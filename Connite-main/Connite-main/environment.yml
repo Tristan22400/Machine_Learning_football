@@ -1,0 +1,7 @@
+dependencies:
+  - python>=3.6
+  - flask
+  - flask-cors
+  - pip
+  - marshmallow
+  - sqlalchemy

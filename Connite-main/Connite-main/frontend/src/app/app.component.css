@@ -1,0 +1,16 @@
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+div.view-container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.mat-toolbar.mat-primary {
+  background: rgb(10, 10, 10);
+  color: white;
+}

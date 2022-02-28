@@ -1,0 +1,58 @@
+<mat-card class="headtitle">
+    <h2>Predicting this season's Winner</h2>
+</mat-card>
+
+<table mat-table [dataSource]= "endSeasonList" class="mat-elevation-z8" class="classement">
+
+    <ng-container matColumnDef="Rank">
+      <th mat-header-cell *matHeaderCellDef class="colonne_title"> Rank </th>
+      <td mat-cell *matCellDef="let element"> {{element.Rank}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Team">
+      <th mat-header-cell *matHeaderCellDef class="colonne_title"> Team </th>
+      <td mat-cell *matCellDef="let element"> {{element.Team}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Points">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Points </th>
+        <td mat-cell *matCellDef="let element"> {{element.Points}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Wins">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Wins </th>
+        <td mat-cell *matCellDef="let element"> {{element.Wins}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Draws">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Draws </th>
+        <td mat-cell *matCellDef="let element"> {{element.Draws}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Losses">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Losses </th>
+        <td mat-cell *matCellDef="let element"> {{element.Losses}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Goals_scored">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Scored </th>
+        <td mat-cell *matCellDef="let element"> {{element.Goals_scored}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Goals_conceded">
+        <th mat-header-cell *matHeaderCellDef class="colonne_title"> Conceded </th>
+        <td mat-cell *matCellDef="let element"> {{element.Goals_conceded}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="See_more">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let element"> 
+            <button mat-stroked-button class="button" [routerLink] = "['/endSeasonPrediction',element.Team]">See more!</button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   </table>
+
+

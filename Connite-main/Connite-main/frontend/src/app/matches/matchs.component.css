@@ -1,0 +1,30 @@
+.card_headtitle{
+    background-color:wheat  !important;
+  }
+  .d{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .headtitle{
+    text-decoration: underline;
+    margin-top: 15px;
+    color: black;
+    font-size:170%;
+    font-weight: bold;
+
+  }
+  .matchs{
+    margin-bottom: 15px;  
+    background-color:beige !important;
+    height:50%;
+  }
+  .matchtitle{
+    color:black;
+    font-size: 150%;
+  }
+  .button{
+    background-color: black;
+    color: white;
+  }
